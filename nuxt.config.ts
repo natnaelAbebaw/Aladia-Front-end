@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
   app: {
-    baseURL: "/your-repo-name/", // Replace 'your-repo-name' with the name of your GitHub repository
+    baseURL: "/Aladia-Front-end/", // Replace 'your-repo-name' with the name of your GitHub repository
   },
 
   // Nuxt generates a static version of the app
