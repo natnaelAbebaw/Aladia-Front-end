@@ -1,0 +1,20 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@iconify/vue": "^4.1.2",
+    "@vue-styled-components/core": "^1.8.0",
+    "nuxt": "^3.14.159",
+    "vue": "latest",
+    "vue-router": "latest",
+    "vue-styled-components": "^1.6.0"
+  }
+}
