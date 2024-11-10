@@ -36,6 +36,9 @@ const Button = styled("button", {
           border: 1px solid var(--color-grey-500);
         `}
 `;
+defineOptions({
+  ssr: false,
+});
 </script>
 
 <template>

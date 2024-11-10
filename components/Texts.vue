@@ -16,6 +16,9 @@ const Text = styled("div", {
   text-align: ${(props) => props.textAlign || "start"};
   text-transform: ${(props) => props.textTransform || "none"};
 `;
+defineOptions({
+  ssr: false,
+});
 </script>
 
 <template>

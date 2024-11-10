@@ -14,6 +14,10 @@ const props = defineProps({
   },
 });
 
+defineOptions({
+  ssr: false,
+});
+
 const Course = styled("div", {})`
   cursor: pointer;
   svg {

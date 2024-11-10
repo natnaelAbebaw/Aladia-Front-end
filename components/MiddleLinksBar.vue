@@ -11,12 +11,9 @@ const props = defineProps({
   },
 });
 
-watch(
-  () => props.isStickyTopBar,
-  (newVal, oldVal) => {
-    console.log("Prop changed from", oldVal, "to", newVal);
-  }
-);
+defineOptions({
+  ssr: false,
+});
 
 const StyledMiddleLinksBar = styled("div")`
   width: 100%;

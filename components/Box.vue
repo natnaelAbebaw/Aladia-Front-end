@@ -34,6 +34,9 @@ const Box = styled("div", {
         ${(props) => props.borderColor || "var(--color-grey-500)"};
     `};
 `;
+defineOptions({
+  ssr: false,
+});
 </script>
 
 <template>

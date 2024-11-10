@@ -25,6 +25,10 @@ const Flex = styled("div", {
     transform: translateY(0.2rem);
   }
 `;
+
+defineOptions({
+  ssr: false,
+});
 </script>
 
 <template>

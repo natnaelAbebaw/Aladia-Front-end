@@ -12,26 +12,12 @@ const props = defineProps({
   },
 });
 
-// console.log("isNotStickyCardAfterFooter---", props.isNotStickyCardAfterFooter);
-// watch(
-//   () => props.isNotStickyCardAfterFooter,
-//   (newVal, oldVal) => {
-//     console.log("Prop changed from", oldVal, "to", newVal);
-//   }
-// );
-
 const Hero = styled("div")`
   background-color: var(--color-grey-900);
   width: 100%;
   height: 50vh;
   color: #fff;
 `;
-console.log(
-  "isSticky",
-  props.isSticky,
-  "isNotStickyCardAfterFooter",
-  props.isNotStickyCardAfterFooter
-);
 
 const Container = styled("div")`
   padding: 3rem 3rem 4rem 3rem;
@@ -57,6 +43,9 @@ const Icons = styled(Icon, { color: "#f69c08" })`
 
 const isSticky = ref(false);
 const card = ref(null);
+defineOptions({
+  ssr: false,
+});
 
 onMounted(() => {
   const observer = new IntersectionObserver(

@@ -21,6 +21,9 @@ const MoveRight = styled("div")`
   margin-left: auto;
 `;
 
+defineOptions({
+  ssr: false,
+});
 console.log("lectures", props.lectures);
 
 const IconBox = styled("div")`

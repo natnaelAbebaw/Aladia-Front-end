@@ -13,19 +13,9 @@ const props = defineProps({
   },
 });
 
-console.log(
-  "isSticky",
-  props.isSticky,
-  "isNotStickyCardAfterFooter",
-  props.isNotStickyCardAfterFooter
-);
-
-watch(
-  () => props.isNotStickyCardAfterFooter,
-  (newVal, oldVal) => {
-    console.log("Prop changed from", oldVal, "to", newVal);
-  }
-);
+defineOptions({
+  ssr: false,
+});
 
 const Card = styled("div", {
   isSticky: false,

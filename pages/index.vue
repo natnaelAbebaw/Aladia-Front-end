@@ -13,6 +13,9 @@
 </template>
 
 <script setup>
+defineOptions({
+  ssr: false,
+});
 import TopBar from "./components/TopBar.vue";
 import MiddleLinksBar from "./components/MiddleLinksBar.vue";
 import Hero from "./components/Hero.vue";

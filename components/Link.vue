@@ -22,6 +22,10 @@ const Link = styled("a", {
     transform: translateY(0.3rem);
   }
 `;
+
+defineOptions({
+  ssr: false,
+});
 </script>
 
 <template>

@@ -41,6 +41,10 @@ const IconBox = styled("div", { isExpanded: false })`
     `};
 `;
 
+defineOptions({
+  ssr: false,
+});
+
 const isExpanded = ref(false);
 
 function toggleExpand() {

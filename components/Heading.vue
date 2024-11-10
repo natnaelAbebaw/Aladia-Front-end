@@ -12,6 +12,10 @@ const Heading = styled("h2", {
   font-weight: ${(props) => props.fw || 700};
   margin-bottom: ${(props) => props.mb || "0"};
 `;
+
+defineOptions({
+  ssr: false,
+});
 </script>
 
 <template>

@@ -65,6 +65,9 @@ const Icony = styled(Icon, { color: "#f69c08" })`
   color: ${(props) => props.color || "#f69c08"} !important;
   margin-bottom: 0.2rem !important;
 `;
+defineOptions({
+  ssr: false,
+});
 </script>
 
 <template>

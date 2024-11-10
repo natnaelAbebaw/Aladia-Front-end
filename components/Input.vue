@@ -18,6 +18,10 @@ const Input = styled("input").attrs({
   }
   /* background-color: var(--color-primary); */
 `;
+
+defineOptions({
+  ssr: false,
+});
 </script>
 
 <template>

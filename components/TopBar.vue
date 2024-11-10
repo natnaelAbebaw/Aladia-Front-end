@@ -36,6 +36,9 @@ const StyledTopBar = styled("div")`
     right: 1rem;
   }
 `;
+defineOptions({
+  ssr: false,
+});
 </script>
 
 <template>

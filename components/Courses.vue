@@ -257,6 +257,10 @@ const StyleButton = styled("button", {})`
   cursor: pointer;
 `;
 
+defineOptions({
+  ssr: false,
+});
+
 const IconBox = styled("div")`
   width: 2rem;
   height: 2rem;

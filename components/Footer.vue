@@ -20,6 +20,10 @@ const FootBox = styled("div", {})`
   padding: 4rem 3rem;
   border-bottom: 1px solid var(--color-grey-300);
 `;
+
+defineOptions({
+  ssr: false,
+});
 </script>
 
 <template>

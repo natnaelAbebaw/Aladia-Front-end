@@ -11,6 +11,10 @@ const Grid = styled("div", { columns: "1f 1fr", gap: "1rem" })`
     grid-template-columns: 1fr;
   }
 `;
+
+defineOptions({
+  ssr: false,
+});
 </script>
 
 <template>
